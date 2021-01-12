@@ -5,8 +5,8 @@ WORKDIR /app
 
 USER app
 
-COPY Gemfile Gemfile.lock watcher.rb watcher.yml runner.sh ./
+COPY Gemfile Gemfile.lock watcher.rb watcher.yml runner.rb ./
 RUN gem install bundler
 RUN bundle install
 
-ENTRYPOINT ["./runner.sh"]
+ENTRYPOINT ["ruby", "./runner.rb"]
