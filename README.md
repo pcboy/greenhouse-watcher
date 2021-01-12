@@ -35,8 +35,14 @@ There is a Dockerfile at the root of the repository, which includes a `runner.sh
 In order to use it you can simply do:  
 
 ```bash
+$> docker-compose up -d
+```
+
+Or if you prefer:
+
+```bash
 $> docker build -t greenhouse_watcher .
-$> docker run -d --rm -t greenhouse_watcher
+$> docker run -d -t greenhouse_watcher
 ```
 
 Then the docker container in background will run the `watcher.rb` script every 12 hours for you.
