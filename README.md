@@ -1,6 +1,6 @@
 # Greenhouse watcher
 
-I found annoying that there is no way to subscribe to greenhouse.io company job boards and be alerted of changes.  
+I found annoying that there is no way to subscribe to [greenhouse.io](https://greenhouse.io) companies' job boards and be alerted of changes.  
 So I made my own script doing exactly that.  
 
 ## Configuration
