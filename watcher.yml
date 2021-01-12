@@ -1,0 +1,15 @@
+organizations:
+  - github
+mail:
+  pony_via: :smtp
+  pony_via_options:
+    address: 'smtp.mailgun.org'
+    port: 587
+    user_name: ''
+    password: ''
+    authentication: plain
+  to: 'test@example.com'
+  from: 'test@example.com'
+filters:
+  location: 'Anywhere|Japan|Remote'
+  title: 'Engineer'
