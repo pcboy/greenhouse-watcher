@@ -7,7 +7,7 @@ So I made my own script doing exactly that.
 
 See [watcher.yml](watcher.yml), it's pretty straightforward:
 
-```
+```yml
 organizations:
   - github # List of organizations you want to listen to
   - company2
@@ -26,7 +26,7 @@ filters:
   title: 'Engineer|Manager' # Regexp for filtering the job title
 ```
 
-Each time you run watcher.rb with `bundle exec ruby watcher.rb` the script will check for new jobs, and save the `last updated at` date inside a 'watcher.log` file (so you don't constantly receive the same jobs in your mailbox..).  
+Each time you run watcher.rb with `bundle exec ruby watcher.rb` the script will check for new jobs, and save the `last updated at` date inside a `watcher.log` file (so you don't constantly receive the same jobs in your mailbox..).  
 You now simply have to run this script regularly.
 
 ## Docker solution
@@ -34,7 +34,7 @@ You now simply have to run this script regularly.
 There is a Dockerfile at the root of the repository, which includes a `runner.sh` script that will run the `watcher.rb` script for you every 12 hours.  
 In order to use it you can simply do:  
 
-```
+```bash
 $> docker build -t greenhouse_watcher .
 $> docker run -d --rm -t greenhouse_watcher
 ```
