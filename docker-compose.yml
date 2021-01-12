@@ -4,3 +4,5 @@ services:
     image: greenhouse_watcher
     build: ./
     restart: always
+    volumes:
+      - ./:/app
