@@ -8,6 +8,7 @@ GEM
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
     awesome_print (1.8.0)
+    chronic (0.10.2)
     concurrent-ruby (1.1.7)
     greenhouse_io (2.5.0)
       httmultiparty (~> 0.3.16)
@@ -34,6 +35,8 @@ GEM
       mail (>= 2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    whenever (1.0.0)
+      chronic (>= 0.6.3)
     yaml (0.1.1)
     zeitwerk (2.4.2)
 
@@ -44,8 +47,8 @@ DEPENDENCIES
   activesupport
   awesome_print
   greenhouse_io
-  mail
   pony
+  whenever
   yaml
 
 BUNDLED WITH

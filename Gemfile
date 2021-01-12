@@ -5,3 +5,4 @@ gem 'pony'
 gem 'yaml'
 gem 'activesupport'
 gem 'awesome_print'
+gem 'whenever', require: false

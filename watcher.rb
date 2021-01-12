@@ -20,12 +20,12 @@ require "greenhouse_io"
 require "active_support/core_ext/hash/indifferent_access"
 require "yaml"
 require "pony"
+require "awesome_print"
 
 gh = GreenhouseIo::JobBoard.new
 config = HashWithIndifferentAccess.new(YAML.load_file("watcher.yml")).deep_symbolize_keys
 
 last_updated_at = File.exists?("watcher.log") ? JSON.parse(File.read("watcher.log")) : {}
-require "awesome_print"
 
 config[:organizations].each do |org|
   last_updated_at[org] ||= 0
