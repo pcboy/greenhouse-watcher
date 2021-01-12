@@ -10,6 +10,7 @@ See [watcher.yml](watcher.yml), it's pretty straightforward:
 ```
 organizations:
   - github # List of organizations you want to listen to
+  - company2
 mail:
   pony_via: :smtp # Pony gem configuration
   pony_via_options:
